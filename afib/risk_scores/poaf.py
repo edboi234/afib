@@ -17,8 +17,8 @@ def poaf(age, copd, egfr, emrgncy, pibp, lvef, vs):
     return arr.dot(POAF_PTS)
 
 
-class Poafc(BaseRisk):
-    array = ["age","copd","egfr","emrgncy","pibp","lvef","vs"]
+class PoafC(BaseRisk):
+    #array = ["age","copd","egfr","emrgncy","pibp","lvef","vs"]
 
     def score(self, row):
         return poaf(row["age"],

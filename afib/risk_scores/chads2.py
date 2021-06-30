@@ -21,13 +21,7 @@ def chad(chf, htn, age, dm, stroke, vd, fem):
 
 
 class Chads2(BaseRisk):
-    features = ["chf",
-                "htn",
-                "index_age",
-                "dm",
-                "stroke",
-                "vd",
-                "fem"]
+    #features = ["chf","htn","index_age","dm","stroke","vd","fem"]
 
     def score(self, row):
         return chad(row["chf"],

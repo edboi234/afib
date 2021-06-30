@@ -1,6 +1,6 @@
 import numpy.testing as npt
 
-from afib.stroke import poaf, Poafc
+from afib.risk_scores import poaf, PoafC
 
 def test_poaf():
     tmp = poaf(59, False, 15, False, False, (30/100), False)
@@ -24,8 +24,8 @@ def test_poaf():
     tmp = poaf(80, True, 14, True, True, (29/100), True)
     npt.assert_equal(tmp, 9)
     
-def test_poafc():
-    model = Poafc()
+def test_PoafC():
+    model = PoafC()
     tmp = model.score({"age": 59,
                         "copd": False,
                         "egfr": 15,

@@ -1,6 +1,6 @@
 import numpy.testing as npt
 
-from afib.stroke import chad, Chads2
+from afib.risk_scores import chad, Chads2
 
 def test_chad():
     tmp = chad(False, False, 45, False, False, False, False)
